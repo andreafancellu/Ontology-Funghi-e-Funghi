@@ -1,0 +1,1980 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#"
+     xml:base="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:bag="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:foodOn="http://purl.obolibrary.org/obo/foodon.owl#"
+     xmlns:schema="http://schema.org/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:collectionentity="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21">
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/bag.owl"/>
+        <dc:creator xml:lang="it">Andrea Fancellu</dc:creator>
+        <dc:date>25/04/2024</dc:date>
+        <dc:description xml:lang="it">L&apos;Ontologia Funghi&amp;Funghi è stata realizzata per modellare il dominio dei funghi in Gallura, subregione della Sardegna. Lo scopo dell&apos;ontologia è quello di fornire un modello consultabile per discernere i funghi commestibili da quelli non commestibili.</dc:description>
+        <dc:title xml:lang="it">Funghi&amp;Funghi</dc:title>
+        <vann:preferredNamespacePrefix>funghi&amp;funghi</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21</vann:preferredNamespaceUri>
+        <rdfs:label xml:lang="it">Ontologia per i Funghi della Gallura</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#abitato_da -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#abitato_da">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#haHabitat"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Habitat"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:comment xml:lang="it">proprietà che indica quale fungo abita un certo habitat</rdfs:comment>
+        <rdfs:label xml:lang="it">abitato da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#confondibileCon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#confondibileCon">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:comment xml:lang="it">relazione che specifica quali funghi assomigliano a quali funghi</rdfs:comment>
+        <rdfs:label xml:lang="it">confondibile con</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#contiene_fungo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#contiene_fungo">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#itemContent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Raccolto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:comment xml:lang="it">prorpietà che rappresenta l&apos;appartenenza del fungo al place holder nel bag</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#cresce_durante -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#cresce_durante">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#durante_cresce"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Stagione"/>
+        <rdfs:comment xml:lang="it">proprietà che indica quale fungo cresce in quale stagione</rdfs:comment>
+        <rdfs:label xml:lang="it">cresce durante</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#durante_cresce -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#durante_cresce">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Stagione"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:comment xml:lang="it">Proprietà che indica durante quale stagione cresce quale fungo</rdfs:comment>
+        <rdfs:label xml:lang="it">durante cresce</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#fungoSiTrovaIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#fungoSiTrovaIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Regione"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#haHabitat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#siTrovaIn"/>
+        </owl:propertyChainAxiom>
+        <rdfs:comment xml:lang="it">relazione che specifica in che regione cresce un determinato fungo.</rdfs:comment>
+        <rdfs:label xml:lang="it">cresce in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#haHabitat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#haHabitat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Habitat"/>
+        <rdfs:comment xml:lang="it">Proprietà che specifica l&apos;habitat di un determinato fungo</rdfs:comment>
+        <rdfs:label xml:lang="it">ha habitat</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#haParassita -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#haParassita">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#parassitaDi"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Albero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Parassita"/>
+        <rdfs:comment xml:lang="it">proprietà che specifica qual è il fungo parassita di un determinato albero</rdfs:comment>
+        <rdfs:label xml:lang="it">ha parassita</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#haSaprofita -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#haSaprofita">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#saprofitaDi"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Albero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Saprofita"/>
+        <rdfs:comment xml:lang="it">proprietà che specifica qual è il fungo saprofita di un determinato albero</rdfs:comment>
+        <rdfs:label xml:lang="it">ha saprofita</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#haSimbionte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#haSimbionte">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#simbionteDi"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Albero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Simbionte"/>
+        <rdfs:comment xml:lang="it">proprietà che specifica qual è il fungo simbionte di un determinato albero</rdfs:comment>
+        <rdfs:label xml:lang="it">ha simbionte</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#ha_cestino -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#ha_cestino">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino"/>
+        <rdfs:comment xml:lang="it">Proprietà che indica l&apos;appartenenza di un cestino a un raccoglitore</rdfs:comment>
+        <rdfs:label xml:lang="it">possiede</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#mangia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#mangia">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#mangiato_da"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:comment xml:lang="it">proprietà che rappresenta il fatto che un raccoglitore mangia un fungo</rdfs:comment>
+        <rdfs:label xml:lang="it">mangia</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#mangiato_da -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#mangiato_da">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+        <rdfs:comment xml:lang="it">proprietà che rappresenta da chi viene mangiato un determinato fungo</rdfs:comment>
+        <rdfs:label xml:lang="it">mangiato da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#parassitaDi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#parassitaDi">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Parassita"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Albero"/>
+        <rdfs:comment xml:lang="it">Proprietà che specifica di quale albero è parassita un fungo parassita</rdfs:comment>
+        <rdfs:label xml:lang="it">parassita di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#raccoglie -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#raccoglie">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#raccoltoDa"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:comment xml:lang="it">Proprietà che specifica quale fungo raccoglie una certa persona</rdfs:comment>
+        <rdfs:label xml:lang="it">raccoglie</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#raccoltoDa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#raccoltoDa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+        <rdfs:comment xml:lang="it">Proprietà che indica da chi è stato raccolto un determinato fungo</rdfs:comment>
+        <rdfs:label xml:lang="it">raccolto da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#saprofitaDi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#saprofitaDi">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Saprofita"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Albero"/>
+        <rdfs:comment xml:lang="it">Proprietà che specifica di quale albero è saprofita un fungo saprofita</rdfs:comment>
+        <rdfs:label xml:lang="it">saprofita di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#siTrovaIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#siTrovaIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Habitat"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Regione"/>
+        <rdfs:comment xml:lang="it">Proprietà che specifica in quale regione si trova un certo habitat</rdfs:comment>
+        <rdfs:label xml:lang="it">si trova in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#simbionteDi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#simbionteDi">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Simbionte"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Albero"/>
+        <rdfs:comment xml:lang="it">Proprietà che specifica di quale albero è simbionte un fungo simbionte</rdfs:comment>
+        <rdfs:label xml:lang="it">simbionte di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#studia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#studia">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#studiato_da"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:comment xml:lang="it">rappresenta il fatto che un fungo sia studiaatod a un raccoglitore. Chi studia un fungo è un micologo. Un micologo non può essere inesperto.</rdfs:comment>
+        <rdfs:label xml:lang="it">studia</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#studiato_da -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#studiato_da">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+        <rdfs:comment xml:lang="it">proprietà che rappresenta il fatto che un fungo venga studiato da un determinato raccoglitore</rdfs:comment>
+        <rdfs:label xml:lang="it">studiato da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#colore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#colore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Proprietà che indica il colore del cappello di un determinato fungo</rdfs:comment>
+        <rdfs:label xml:lang="it">colore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#colore_cappello -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#colore_cappello">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#colore"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">proprietà che rappresenta il colore del gambo del fungo</rdfs:comment>
+        <rdfs:label xml:lang="it">colore gambo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#colore_gambo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#colore_gambo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#colore"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">proprietà che rappresenta il color del cappello del fungo</rdfs:comment>
+        <rdfs:label xml:lang="it">colore cappello</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#ha_lamelle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#ha_lamelle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#ha_tubuli"/>
+        <rdfs:comment xml:lang="it">proprietà che rappresenta la presenza o assenza di lamelle nella parte inferiore del cappello</rdfs:comment>
+        <rdfs:label xml:lang="it">ha lamelle</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#ha_nome_fungo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#ha_nome_fungo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">proprietà che rappresenta il nome di un fungo</rdfs:comment>
+        <rdfs:label xml:lang="it">ha nome fungo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#ha_nome_raccoglitore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#ha_nome_raccoglitore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Proprietà che rappresenta il nome di un raccoglitore</rdfs:comment>
+        <rdfs:label xml:lang="it">ha nome raccoglitore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#ha_tubuli -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#ha_tubuli">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="it">proprietà che rappressenta la presenza o assenza di tubuli nella parte inferiore del cappello del fungo</rdfs:comment>
+        <rdfs:label xml:lang="it">ha tubuli</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#peso -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#peso">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment xml:lang="it">Proprietà che idnica il peso espresso in grammi di un determinato fungo</rdfs:comment>
+        <rdfs:label xml:lang="it">peso</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#sano -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#sano">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="it">proprietà che indica se un fungo è o meno sano. Un fungo è definito sano se è privo di parassiti, come insetti o patogeni vari.</rdfs:comment>
+        <rdfs:label xml:lang="it">sano</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#velenoso -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#velenoso">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="it">proprietà che determina la velenosità di un fungo</rdfs:comment>
+        <rdfs:label xml:lang="it">velenoso</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03412735 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03412735">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Armillaria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_40144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_40144">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_41955 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_41955">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_5204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5204"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_5369 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5369">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Albero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Albero">
+        <rdfs:comment xml:lang="it">Classe che rappresenta il concetto albero, inteso come struttura che favorisce la crescita di funghi simbionti, saprofiti e parassiti</rdfs:comment>
+        <rdfs:label xml:lang="it">Albero</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Simbionte"/>
+        <rdfs:comment xml:lang="it">Amanita rappresenta un genere di funghi velenosi o commestibili della famiglia Amanitaceae. Sono caratterizzati da cappelli ampi, lamelle e anello sul gambo, residuo dello stato primordiale del corpo fruttifero. Alcune specie producono tossine pericolose per l&apos;uomo.</rdfs:comment>
+        <rdfs:label xml:lang="it">Amanita</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Caesarea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Caesarea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita"/>
+        <rdfs:comment xml:lang="it">Caesarea rappresenta una specie di fungo commestibile appartenente al genere Amanita. Questo fungo è caratterizzato da un cappello arancione, lamelle bianche e gambo bianco, ed è altamente apprezzato per il suo gusto delicato e la sua consistenza.</rdfs:comment>
+        <rdfs:label xml:lang="it">Caesarea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Muscaria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Muscaria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita"/>
+        <rdfs:comment xml:lang="it">Muscaria rappresenta una specie di fungo velenoso appartenente al genere Amanita. Questo fungo è caratterizzato da un cappello rosso vivo punteggiato di bianco, lamelle bianche e gambo bianco striato, ed è noto per la presenza di sostanze psicoattive.</rdfs:comment>
+        <rdfs:label xml:lang="it">Muscaria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Pantherina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Pantherina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita"/>
+        <rdfs:comment xml:lang="it">Pantherina rappresenta una specie di fungo velenoso appartenente al genere Amanita. Questo fungo è caratterizzato da un cappello marrone chiaro con macchie bianche, lamelle bianche e gambo bianco o crema, ed è considerato altamente tossico per l&apos;uomo.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pantherina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Phalloides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Phalloides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita"/>
+        <rdfs:comment xml:lang="it">Phalloides rappresenta una specie di fungo altamente velenoso appartenente al genere Amanita. Questo fungo è caratterizzato da un cappello verde oliva, lamelle bianche e gambo bianco o verdastro, ed è noto per contenere potenti sostanze tossiche che possono causare danni gravi al fegato e persino la morte.</rdfs:comment>
+        <rdfs:label xml:lang="it">Phalloides</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Verna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Verna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita"/>
+        <rdfs:comment xml:lang="it">Verna rappresenta una specie di fungo velenoso appartenente al genere Amanita. Questo fungo è caratterizzato da un cappello bianco o crema, lamelle bianche e gambo bianco, ed è noto per contenere sostanze tossiche mortali per l&apos;uomo.</rdfs:comment>
+        <rdfs:label xml:lang="it">Verna</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Armillaria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Armillaria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Parassita"/>
+        <rdfs:comment xml:lang="it">Armillaria rappresenta un genere di funghi parassiti della famiglia Physalacriaceae. I funghi Armillaria sono caratterizzati da cappelli convessi, lamelle e anello sul gambo.</rdfs:comment>
+        <rdfs:label xml:lang="it">Armillaria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Armillaria_Mellea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Armillaria_Mellea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Armillaria"/>
+        <rdfs:comment xml:lang="it">Mellea rappresenta una specie di fungo parassita appartenente al genere Armillaria. Questo fungo è caratterizzato da un cappello marrone scuro, lamelle bianche e gambo fibroso, ed è noto per causare marciume radicale nelle piante ospiti. È comunemente noto come &quot;chiodino&quot; per il fatto che sviluppi più carpofori che crescono in gruppo e per la sua forma.</rdfs:comment>
+        <rdfs:label xml:lang="it">Mellea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Simbionte"/>
+        <rdfs:comment xml:lang="it">Classe rappresentante i Boletus, classe di funghi caratterizzate da tubuli al posto delle lamesse nella parte inferiore del cappello.</rdfs:comment>
+        <rdfs:label xml:lang="it">Boletus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Aestivalis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Aestivalis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus"/>
+        <rdfs:comment xml:lang="it">Aestivalis rappresenta una specie di fungo porcino appartenente al genere Boletus, presente nell&apos;ecosistema della Sardegna. Questo fungo è conosciuto per il suo cappello marrone chiaro, tubuli gialli e gambo slanciato, ed è apprezzato per il suo sapore delicato e la sua consistenza carnosa.</rdfs:comment>
+        <rdfs:label xml:lang="it">Aestivalis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Edulis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Edulis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus"/>
+        <rdfs:comment xml:lang="it">Edulis rappresenta una delle specie di fungo più rinomate e ricercate, appartenente al genere Boletus. Questo fungo è caratterizzato da un cappello marrone scuro, tubuli bianchi o gialli e gambo massiccio, ed è ampiamente apprezzato per il suo gusto ricco e aromatico.</rdfs:comment>
+        <rdfs:label xml:lang="it">Edulis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Satanas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Satanas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus"/>
+        <rdfs:comment xml:lang="it">Satanas rappresenta una specie di fungo velenoso appartenente al genere Boletus. Questo fungo è caratterizzato da un cappello marrone con sfumature rosse, tubuli gialli e gambo massiccio e rosso, ed è noto per contenere sostanze tossiche che possono causare gravi disturbi gastro-intestinali e reazioni avverse in caso di ingestione.</rdfs:comment>
+        <rdfs:label xml:lang="it">Satanas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Bag"/>
+        <rdfs:comment xml:lang="it">Classe che rappresenta il cestino di funghi di un raccoglitore</rdfs:comment>
+        <rdfs:label xml:lang="it">Cestino</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Con_Parassita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Con_Parassita">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#haParassita"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Parassita"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Albero"/>
+        <rdfs:comment xml:lang="it">Albero che ospita almeno 1 parassita</rdfs:comment>
+        <rdfs:label xml:lang="it">ConParassita</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Con_Saprofita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Con_Saprofita">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#haSaprofita"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Saprofita"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Albero"/>
+        <rdfs:comment xml:lang="it">Albero che ospita almeno 1 saprofita</rdfs:comment>
+        <rdfs:label xml:lang="it">ConSaprofita</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Con_Simbionte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Con_Simbionte">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#haSimbionte"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Simbionte"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Albero"/>
+        <rdfs:comment xml:lang="it">Alberp che ospita almeno 1 simbionte</rdfs:comment>
+        <rdfs:label xml:lang="it">ConSimbionte</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5204"/>
+        <rdfs:comment xml:lang="it">Fungo rappresenta un organismo del regno Fungi, presente nell&apos;ecosistema della Sardegna. I funghi possono variare in termini di forma, dimensioni, peso, colore, e possono essere commestibili o velenosi.</rdfs:comment>
+        <rdfs:label xml:lang="it">Fungo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Commestibile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Commestibile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:comment xml:lang="it">Classe che indica un fungo comemsstibile, inteso come un fungo non velenoso.</rdfs:comment>
+        <rdfs:label xml:lang="it">Commestibile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Comune -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Comune">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:comment xml:lang="it">Un fungo comune è un fungo che cresce in almeno 2 habitat differenti</rdfs:comment>
+        <rdfs:label xml:lang="it">Comune</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Parassita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Parassita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:comment xml:lang="it">Parassita rappresenta un tipo di fungo che si nutre di altre specie, causando danni o malattie. Questi funghi possono infettare piante o altri organismi, compromettendo la loro salute e la loro sopravvivenza.</rdfs:comment>
+        <rdfs:label xml:lang="it">Parassita</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Raccolto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Raccolto">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+        <rdfs:comment xml:lang="it">classe che rappresenta un fungo raccolto da un raccoglitore</rdfs:comment>
+        <rdfs:label xml:lang="it">Fungo Raccolto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Saprofita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Saprofita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:comment xml:lang="it">Saprofita rappresenta un tipo di fungo che si nutre di materiale organico morto o in decomposizione. Questi funghi svolgono un ruolo fondamentale nella decomposizione della materia organica, contribuendo al riciclaggio dei nutrienti nell&apos;ecosistema sardo.</rdfs:comment>
+        <rdfs:label xml:lang="it">Saprofita</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Simbionte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Simbionte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <rdfs:comment xml:lang="it">Simbionte rappresenta un tipo di fungo che stabilisce una relazione simbiotica con altre specie. Questi funghi forneiscono benefici sia al fungo stesso che all&apos;organismo ospite. La simbiosi fungina è cruciale per la salute degli ecosistemi sardi, contribuendo alla nutrizione e alla resistenza delle piante.</rdfs:comment>
+        <rdfs:label xml:lang="it">Simbionte</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Habitat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Habitat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Collina"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Mare"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Montagna"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Pianura"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="it">Habitat rappresenta il tipo di ambiente in cui si sviluppano i funghi in Sardegna. Gli habitat fungini possono variare da foreste di conifere ad ambienti di macchia mediterranea, da prati umidi ad ambienti montani.</rdfs:comment>
+        <rdfs:label xml:lang="it">Habitat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Inesperto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Inesperto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+        <rdfs:comment xml:lang="it">Inesperto rappresenta un raccoglitore che raccoglie anche funghi velenosi</rdfs:comment>
+        <rdfs:label xml:lang="it">Inesperto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Micologo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Micologo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+        <rdfs:comment xml:lang="it">Un micologo è un raccoglitore che studia i funghi</rdfs:comment>
+        <rdfs:label xml:lang="it">Micologo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#raccoglie"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:comment xml:lang="it">Raccoglitore rappresenta un individuo che si diletta nella raccolta dei funghi in Sardegna.</rdfs:comment>
+        <rdfs:label xml:lang="it">Raccoglitore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Raccoglitore_Esperto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Raccoglitore_Esperto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+        <rdfs:comment xml:lang="it">Raccoglitore che trova un fungo di almeno 1 kg</rdfs:comment>
+        <rdfs:label xml:lang="it">Fortunato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Regione -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Regione">
+        <rdfs:comment xml:lang="it">Regione rappresenta una suddivisione della Sardegna, caratterizzata da specifiche caratteristiche geografiche, culturali e ambientali.</rdfs:comment>
+        <rdfs:label xml:lang="it">Regione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Stagione -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Stagione">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Autunno"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Estate"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Inverno"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Primavera"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="it">Stagione rappresenta le quattro stagioni dell&apos;anno in cui possono crescere funghi differenti.</rdfs:comment>
+        <rdfs:label xml:lang="it">Stagione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholma_Portentosum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholma_Portentosum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma_Pardinum"/>
+        <rdfs:comment xml:lang="it">Portentosum rappresenta una specie di fungo appartenente al genere Tricholoma, presente nell&apos;ecosistema della Sardegna. Particolarmente apprezzato come fungo commestibile, si distingue per il colore marrone/grigio scuro con riflessi e sfumature gialle su cappello, gambo e carne.</rdfs:comment>
+        <rdfs:label xml:lang="it">Portentosum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Saprofita"/>
+        <rdfs:comment xml:lang="it">Tricholoma rappresenta un genere di funghi commestibili o tossici della famiglia Tricholomataceae. Sono caratterizzati da cappelli convessi, lamelle libere e gambo fibroso, e alcune specie sono apprezzate come alimento.</rdfs:comment>
+        <rdfs:label xml:lang="it">Tricholoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma_Pardinum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma_Pardinum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma"/>
+        <rdfs:comment xml:lang="it">Pardinum rappresenta una specie di fungo velenoso appartenente al genere Tricholoma. Questo fungo è caratterizzato da un cappello marrone chiaro con macchie grigie o brune, lamelle bianche e gambo bianco o grigiastro, ed è considerato tossico per l&apos;uomo.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pardinum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Caesarea_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Caesarea_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+        <cresce_durante rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Autunno"/>
+        <cresce_durante rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Inverno"/>
+        <haHabitat rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Montagna"/>
+        <simbionteDi rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Quercia_2"/>
+        <colore_cappello>giallo</colore_cappello>
+        <colore_gambo>rosso</colore_gambo>
+        <sano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sano>
+        <velenoso rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</velenoso>
+        <rdfs:comment xml:lang="it">Esemplare di Amanita Caesarea</rdfs:comment>
+        <rdfs:label xml:lang="it">Amanita Caesarea 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Andrea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Andrea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+        <ha_cestino rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Andrea"/>
+        <ha_nome_raccoglitore>Andrea</ha_nome_raccoglitore>
+        <rdfs:comment xml:lang="it">Raccoglitore di funghi</rdfs:comment>
+        <rdfs:label xml:lang="it">Andrea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Antonio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Antonio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+        <ha_nome_raccoglitore>Antonio</ha_nome_raccoglitore>
+        <rdfs:comment xml:lang="it">Raccoglitore di funghi</rdfs:comment>
+        <rdfs:label xml:lang="it">Antonio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Armillaria_Mellea_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Armillaria_Mellea_1">
+        <mangiato_da rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Andrea"/>
+        <ha_lamelle rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ha_lamelle>
+        <ha_nome_fungo>Armillaria Mellea</ha_nome_fungo>
+        <peso rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</peso>
+        <velenoso rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</velenoso>
+        <rdfs:comment xml:lang="it">Esemplare di Armillaria Mellea</rdfs:comment>
+        <rdfs:label xml:lang="it">Armillaria Mellea 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Autunno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Autunno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Stagione"/>
+        <rdfs:comment xml:lang="it">Una delle quattro stagioni</rdfs:comment>
+        <rdfs:label xml:lang="it">Autunno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Aestivalis_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Aestivalis_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Aestivalis"/>
+        <cresce_durante rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Estate"/>
+        <raccoltoDa rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Gavino"/>
+        <colore_cappello rdf:datatype="http://www.w3.org/2001/XMLSchema#string">marrone chiaro</colore_cappello>
+        <colore_gambo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">marrone</colore_gambo>
+        <ha_nome_fungo>Boletus Aestivalis</ha_nome_fungo>
+        <ha_tubuli rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ha_tubuli>
+        <peso rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1000</peso>
+        <sano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sano>
+        <velenoso rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</velenoso>
+        <rdfs:comment xml:lang="it">Esemplare di Boletus Aestivalis</rdfs:comment>
+        <rdfs:label xml:lang="it">Boletus Aestivalis 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Satanas_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Satanas_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Satanas"/>
+        <mangiato_da rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Andrea"/>
+        <colore_cappello rdf:datatype="http://www.w3.org/2001/XMLSchema#string">marrone e rosso</colore_cappello>
+        <colore_gambo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rosso bianco e marrone</colore_gambo>
+        <ha_nome_fungo>Boletus Satanas</ha_nome_fungo>
+        <ha_tubuli rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ha_tubuli>
+        <peso rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">756</peso>
+        <velenoso rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</velenoso>
+        <rdfs:comment xml:lang="it">Esemplare di Boletus Satanas</rdfs:comment>
+        <rdfs:label xml:lang="it">Boletus Satanas 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Andrea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Andrea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino"/>
+        <rdfs:comment xml:lang="it">Cestino posseduto dal raccoglitore Andrea</rdfs:comment>
+        <rdfs:label xml:lang="it">Cestino di Andrea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Gavino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Gavino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino"/>
+        <rdfs:comment xml:lang="it">Cestino posseduto dal raccoglitore Gavino</rdfs:comment>
+        <rdfs:label xml:lang="it">Cestino di Gavino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Collina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Collina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Habitat"/>
+        <rdfs:comment xml:lang="it">Rappresenta le zone collinari del comune di Tempio Pausania, caratterizzate da una folta macchia mediterranea</rdfs:comment>
+        <rdfs:label xml:lang="it">Collina Tempio Pausania</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Estate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Estate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Stagione"/>
+        <rdfs:comment xml:lang="it">Una delle quattro stagioni</rdfs:comment>
+        <rdfs:label xml:lang="it">Estate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_di_Andrea_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_di_Andrea_1">
+        <bag:itemOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Andrea"/>
+        <collectionentity:isMemberOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Andrea"/>
+        <contiene_fungo rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Armillaria_Mellea_1"/>
+        <rdfs:comment xml:lang="it">Fungo raccolto da Andrea</rdfs:comment>
+        <rdfs:label xml:lang="it">Fungo di Andrea 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_di_Andrea_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_di_Andrea_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Raccolto"/>
+        <bag:itemOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Andrea"/>
+        <contiene_fungo rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Satanas_1"/>
+        <rdfs:comment xml:lang="it">Fungo raccolto da Andrea</rdfs:comment>
+        <rdfs:label xml:lang="it">Fungo di Andrea 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_di_Andrea_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_di_Andrea_3">
+        <bag:itemOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Andrea"/>
+        <contiene_fungo rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Aestivalis_1"/>
+        <rdfs:comment xml:lang="it">Fungo raccolto da Andrea</rdfs:comment>
+        <rdfs:label xml:lang="it">Fungo di Andrea 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_di_Gavino_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_di_Gavino_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Raccolto"/>
+        <bag:itemOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Gavino"/>
+        <contiene_fungo rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma_Portentosum_1"/>
+        <rdfs:comment xml:lang="it">Fungo raccolto da Gavino</rdfs:comment>
+        <rdfs:label xml:lang="it">Fungo di Gavino 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_di_Gavino_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_di_Gavino_5">
+        <bag:itemOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Gavino"/>
+        <contiene_fungo rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma_Pardinum_1"/>
+        <rdfs:comment xml:lang="it">Fungo raccolto da Gavino</rdfs:comment>
+        <rdfs:label xml:lang="it">Fungo di Gavino 5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Gallura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Gallura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Regione"/>
+        <rdfs:label xml:lang="it">Gallura</rdfs:label>
+        <rdfs:label xml:lang="it">La Gallura è una subregione storica e geografica situata nel nord-est della Sardegna. Caratterizzata da un paesaggio variegato che include coste frastagliate, montagne granitiche e vaste aree di macchia mediterranea.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Gavino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Gavino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+        <ha_cestino rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Gavino"/>
+        <raccoglie rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_muscaria_1"/>
+        <raccoglie rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_phalloides_1"/>
+        <studia rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_muscaria_1"/>
+        <studia rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_phalloides_1"/>
+        <ha_nome_raccoglitore>Gavino</ha_nome_raccoglitore>
+        <rdfs:comment xml:lang="it">Raccoglitore di funghi</rdfs:comment>
+        <rdfs:label xml:lang="it">Gavino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Inverno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Inverno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Stagione"/>
+        <rdfs:comment xml:lang="it">Una delle quattro stagioni</rdfs:comment>
+        <rdfs:label xml:lang="it">Inverno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Mare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Mare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Habitat"/>
+        <rdfs:comment xml:lang="it">Zona marittima caratterizzata da pianure, scogliere e pineti</rdfs:comment>
+        <rdfs:label xml:lang="it">Vignola Mare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Montagna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Montagna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Habitat"/>
+        <siTrovaIn rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Gallura"/>
+        <rdfs:comment xml:lang="it">Il Limbara, situato nella Gallura, nel nord-est della Sardegna, è un monte che supera i 1300 metri caratterizzato da rocce granitiche, e da una grande ricchezza di flora e fauna. Ospita boschi di conifere.</rdfs:comment>
+        <rdfs:label xml:lang="it">Monte Limbara</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Pianura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Pianura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Habitat"/>
+        <rdfs:comment xml:lang="it">Zona pianeggiante caratterizzata da boschi di quercia da sughero.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pianura Calangianus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Primavera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Primavera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Stagione"/>
+        <rdfs:comment xml:lang="it">Una delle quattro stagioni</rdfs:comment>
+        <rdfs:label xml:lang="it">Primavera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Quercia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Quercia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Albero"/>
+        <haSimbionte rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_caesarea_1"/>
+        <rdfs:comment xml:lang="it">Esemplare di quercia da sughero</rdfs:comment>
+        <rdfs:label xml:lang="it">Quercia 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Quercia_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Quercia_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Albero"/>
+        <haSimbionte rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Satanas_1"/>
+        <haSimbionte rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_phalloides_1"/>
+        <rdfs:comment xml:lang="it">Esemplare di quercia da sughero</rdfs:comment>
+        <rdfs:label xml:lang="it">Quercia 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Quercia_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Quercia_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Albero"/>
+        <haParassita rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Armillaria_Mellea_1"/>
+        <rdfs:comment xml:lang="it">Esemplare di quercia da sughero</rdfs:comment>
+        <rdfs:label xml:lang="it">Quercia 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma_Pardinum_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma_Pardinum_1">
+        <cresce_durante rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Inverno"/>
+        <haHabitat rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Collina"/>
+        <haHabitat rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Montagna"/>
+        <saprofitaDi rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Quercia"/>
+        <colore_cappello>marrone</colore_cappello>
+        <colore_gambo>marrone maculato</colore_gambo>
+        <ha_lamelle rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ha_lamelle>
+        <ha_nome_fungo>Tricholoma Pardinum</ha_nome_fungo>
+        <peso rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</peso>
+        <velenoso rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</velenoso>
+        <rdfs:comment xml:lang="it">Esemplare di Tricholoma Pardinum</rdfs:comment>
+        <rdfs:label xml:lang="it">Tricholoma Pardinum 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma_Pardinum_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma_Pardinum_2">
+        <haHabitat rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Montagna"/>
+        <raccoltoDa rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Antonio"/>
+        <studiato_da rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Antonio"/>
+        <colore>grigio</colore>
+        <colore>marrone</colore>
+        <ha_lamelle rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ha_lamelle>
+        <ha_nome_fungo>Tricholoma Pardinum</ha_nome_fungo>
+        <peso rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">500</peso>
+        <velenoso rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</velenoso>
+        <rdfs:comment xml:lang="it">Esemplare di Tricholoma Pardinum</rdfs:comment>
+        <rdfs:label xml:lang="it">Tricholoma Pardinum 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma_Portentosum_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma_Portentosum_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholma_Portentosum"/>
+        <cresce_durante rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Inverno"/>
+        <haHabitat rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Montagna"/>
+        <raccoltoDa rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Gavino"/>
+        <colore_cappello>marrone</colore_cappello>
+        <colore_gambo>marrone</colore_gambo>
+        <ha_lamelle rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ha_lamelle>
+        <ha_nome_fungo>Tricholoma Portentosum</ha_nome_fungo>
+        <peso rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</peso>
+        <velenoso rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</velenoso>
+        <rdfs:comment xml:lang="it">Esemplare di Tricholoma Portentosum</rdfs:comment>
+        <rdfs:label xml:lang="it">Tricholoma Portentosum 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_caesarea_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_caesarea_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Caesarea"/>
+        <confondibileCon rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_muscaria_1"/>
+        <cresce_durante rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Autunno"/>
+        <cresce_durante rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Inverno"/>
+        <haHabitat rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Collina"/>
+        <haHabitat rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Montagna"/>
+        <haHabitat rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Pianura"/>
+        <raccoltoDa rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Gavino"/>
+        <colore_cappello rdf:datatype="http://www.w3.org/2001/XMLSchema#string">giallo</colore_cappello>
+        <colore_gambo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arancione</colore_gambo>
+        <ha_lamelle rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ha_lamelle>
+        <ha_nome_fungo>Amanita Caesarea</ha_nome_fungo>
+        <peso rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">300</peso>
+        <velenoso rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</velenoso>
+        <rdfs:comment xml:lang="it">Esemplare di Amanita Caesarea</rdfs:comment>
+        <rdfs:label xml:lang="it">Amanita Caesarea 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_muscaria_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_muscaria_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Muscaria"/>
+        <confondibileCon rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_phalloides_1"/>
+        <cresce_durante rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Autunno"/>
+        <haHabitat rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Montagna"/>
+        <haHabitat rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Pianura"/>
+        <studiato_da rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Gavino"/>
+        <ha_lamelle rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ha_lamelle>
+        <ha_nome_fungo>Amanita Muscaria</ha_nome_fungo>
+        <peso rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">400</peso>
+        <velenoso rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</velenoso>
+        <rdfs:comment xml:lang="it">Esemplare di Amanita Muscaria</rdfs:comment>
+        <rdfs:label xml:lang="it">Amanita Muscaria 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_phalloides_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_phalloides_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Phalloides"/>
+        <cresce_durante rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Inverno"/>
+        <haHabitat rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Montagna"/>
+        <studiato_da rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Gavino"/>
+        <ha_lamelle rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ha_lamelle>
+        <ha_nome_fungo>Amanita Phalloides</ha_nome_fungo>
+        <peso rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">100</peso>
+        <sano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sano>
+        <velenoso rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</velenoso>
+        <rdfs:comment xml:lang="it">Esemplare di Amanita Phalloides</rdfs:comment>
+        <rdfs:label xml:lang="it">Amanita Phalloides 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#fungo_di_Gavino_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#fungo_di_Gavino_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Raccolto"/>
+        <bag:itemOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Gavino"/>
+        <collectionentity:isMemberOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Gavino"/>
+        <contiene_fungo rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_caesarea_1"/>
+        <rdfs:comment xml:lang="it">Fungo raccolto da Gavino</rdfs:comment>
+        <rdfs:label xml:lang="it">Fungo di Gavino 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#fungo_di_Gavino_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#fungo_di_Gavino_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Raccolto"/>
+        <bag:itemOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Gavino"/>
+        <collectionentity:isMemberOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Gavino"/>
+        <contiene_fungo rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_phalloides_1"/>
+        <rdfs:comment xml:lang="it">Fungo raccolto da Gavino</rdfs:comment>
+        <rdfs:label xml:lang="it">Fungo di Gavino 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#fungo_di_Gavino_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#fungo_di_Gavino_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Raccolto"/>
+        <bag:itemOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Gavino"/>
+        <collectionentity:isMemberOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Gavino"/>
+        <contiene_fungo rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_muscaria_1"/>
+        <rdfs:comment xml:lang="it">Fungo raccolto da Gavino</rdfs:comment>
+        <rdfs:label xml:lang="it">Fungo di Gavino 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Caesarea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Muscaria"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Pantherina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Phalloides"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Verna"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Aestivalis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Edulis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Boletus_Satanas"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Parassita"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Saprofita"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Simbionte"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Amanita_Caesarea_2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#amanita_caesarea_1"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Andrea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Antonio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Gavino"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Autunno"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Estate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Inverno"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Primavera"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Andrea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino_di_Gavino"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Collina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Mare"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Montagna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Pianura"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_di_Andrea_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_di_Andrea_2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_di_Andrea_3"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_di_Gavino_4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_di_Gavino_5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#fungo_di_Gavino_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#fungo_di_Gavino_2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#fungo_di_Gavino_3"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Quercia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Quercia_2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Quercia_3"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma_Pardinum_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Tricholoma_Pardinum_2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#fr">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#h1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#h2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#v">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Un micologo è una persona che raccoglie e studia un fungo</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regola per Micologo</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#raccoglie"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#studia"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#p"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Micologo"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Un raccoglitore fortunato è un raccoglitore che raccoglie un fungo di almeno 1kg.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regola Raccoglitore Fortunato</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#raccoltoDa"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#peso"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#v"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#v"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">999</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Raccoglitore_Esperto"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Un fungo è commesstibile se non è velenoso e non ha parassiti (è sano)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regola Fungo Commestibile</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#velenoso"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#sano"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Commestibile"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Un raccoglitore Inesperto è un raccoglitore che raccoglie e mangia un fungo velenoso</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regola Raccoglitore Inesperto</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Persona"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Cestino"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#ha_cestino"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#r"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#c"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#hasMember"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#c"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#fr"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#contiene_fungo"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#fr"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#velenoso"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#mangia"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#r"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Inesperto"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Un fungo comune è definito come un fungo che cresce in almeno 2 habitat</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regola Fungo Comune</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Habitat"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#h1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Habitat"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#h2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#haHabitat"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#h1"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#haHabitat"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#h2"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#h1"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#h2"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#Fungo_Comune"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/3/untitled-ontology-21#f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
